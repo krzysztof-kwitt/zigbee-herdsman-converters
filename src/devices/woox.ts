@@ -46,6 +46,9 @@ const definitions: Definition[] = [
             await reporting.batteryVoltage(endpoint);
             await reporting.batteryPercentageRemaining(endpoint);
         },
+        whiteLabel: [
+            tuya.whitelabel('Appartme', 'APRM-02-004', 'Temperature and humidity sensor', ['_TZ3000_led3tz0u']),
+        ],
     },
     {
         fingerprint: [{modelID: 'TS0601', manufacturerName: '_TZE200_aycxwiau'}],
